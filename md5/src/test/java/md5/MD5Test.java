@@ -15,7 +15,7 @@ public class MD5Test {
     protected int nbTrial = 100;
     protected Random random = new Random();
 
-    @Test
+    @Test(timeout = 5000)
     public void md5Test() {
         for(int trial = 0; trial < nbTrial; trial++) {
             String string = randomString();
